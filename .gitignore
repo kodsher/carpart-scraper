@@ -1,0 +1,7 @@
+node_modules
+.env
+ebay-results.html
+ebay-results.csv
+ebay-images/
+*.log
+.DS_Store
