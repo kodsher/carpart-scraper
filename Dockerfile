@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.40.0-focal
+FROM mcr.microsoft.com/playwright:v1.40.0-browsers
 
 WORKDIR /app
 
@@ -7,9 +7,6 @@ COPY package*.json ./
 
 # Install dependencies
 RUN npm ci
-
-# Install Playwright browsers
-RUN npx playwright install --with-deps chromium
 
 # Copy application files
 COPY . .
